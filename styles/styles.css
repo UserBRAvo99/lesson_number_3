@@ -213,6 +213,7 @@ body {
 /* footer - Підвал веб-сайту */
 .footer {
     background-color: var(--second-primary-background);
+    padding: 60px 0 60px 215px;
 }
 /* Лого */
 .footer_logo {
@@ -222,11 +223,15 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: var(--primary-text-white);
+
+    display: inline-block;
+    margin-bottom: 20px;
 }
 .footer_logo_firstp {
     color: var(--accent-color);
 }
 /* Адреса */
+
 .address_map {
     font-style: normal;
     line-height: 1.71;
@@ -237,6 +242,13 @@ body {
     line-height: 1.71;
     color: var(--second-text-gray-alfa-chenel);
 }
+.address_item {
+    margin-bottom: 10px;
+}
+.address_item:last-child {
+    margin-bottom: 0;
+}
+
 .address_map:hover, .address_map:focus, .address_link:hover, .address_link:focus {
     color: var(--accent-color);
 }
