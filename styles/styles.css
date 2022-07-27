@@ -12,8 +12,16 @@
 sans-serif;
 font-family: 'Roboto',
 sans-serif; */
-* {
+html {
     box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, ul, p {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
 }
 /* перемінні для основних кольорів */
 :root {
@@ -27,6 +35,16 @@ sans-serif; */
     --second-text-gray: #757575;
     --second-text-gray-alfa-chenel: rgba(255, 255, 255, 0.6);
 }
+/* container - ширина контенту відповідає макету 1200рх + треба врахувати гаттери 30рх (по 15 з кожного боку), в данному випадку треба відняти від зазначеного розміру */
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding: 94px 0;
+}
 /* В body вносим найросповсюджені властивасті, змінюємо лише ті , які відрізняються від більшості */
 body {
     font-size: 14px;
@@ -36,7 +54,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-text-gray);
 
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-background-color);   
 }
 /*  Прибираємо маркування у списків */
 .link {
@@ -46,8 +64,11 @@ body {
 .list {
     list-style-type: none;
 }
+/* Шапка сайту */
+/* .header {
+    border-bottom: 1px solid #ECECEC;
+} */
 /* Приховані заголовки */
-
 .hidden_title {
     position: absolute;
     white-space: nowrap;
@@ -65,6 +86,10 @@ body {
 /* Шапка */
 /* Блок навігації */
 /* Лого */
+.header {
+    border-bottom: 1px solid #ECECEC;
+    width: 100%;
+}
 .header_logo {
     font-family:'Raleway',
         sans-serif;
@@ -100,6 +125,7 @@ body {
 /* Блок герой */
 .hero {
     background-color: var(--second-primary-background);
+    min-height: 600px;
 }
 .hero_title {
     font-weight: 900;
@@ -109,8 +135,23 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-background-color);
+    width: 700px;
+
+    padding-top: 200px;
+    margin-bottom: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero_button {
+    min-width: 215px;
+    border-radius: 4px;
+    border: transparent;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.84;
@@ -119,10 +160,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-text-white);
+
     background-color: var(--accent-color);
     cursor: pointer;
 }
-
 /* Блок - Наші особливості */
 .features_title {
     font-weight: 700;
@@ -131,6 +172,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-black);
+
+    margin-bottom: 10px;
 }
 .features_description {
     line-height: 1.71;
@@ -145,6 +188,9 @@ body {
     color: var(--primary-text-black);
 }
 /* Блок - наша команда */
+.team_first_title {
+    margin-bottom: 50px;
+}
 .team {
     background-color: var(--background-section-color);
 } 
