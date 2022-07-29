@@ -274,17 +274,24 @@ body {
 .team_list .team_item:nth-child(4n) {
     margin-right: 0;
 }
+.team_photo {
+    margin-bottom: 30px;
+}
 .team_title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     color: var(--primary-text-black);
+
+    margin-bottom: 10px;
 }
 .team_position {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+
+    margin-bottom: 30px;
 }
 /* Футер для сторінок Студія та Прортфоліо */
 /* footer - Підвал веб-сайту */
