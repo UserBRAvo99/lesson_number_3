@@ -165,6 +165,7 @@ body {
 .hero {
     background-color: var(--second-primary-background);
     min-height: 600px;
+    padding-top: 200px;
 }
 .hero_title {
     font-weight: 900;
@@ -176,7 +177,6 @@ body {
     color: var(--primary-background-color);
     width: 700px;
 
-    padding-top: 200px;
     margin-bottom: 30px;
 
     margin-left: auto;
@@ -274,8 +274,8 @@ body {
 .team_list .team_item:nth-child(4n) {
     margin-right: 0;
 }
-.team_photo {
-    margin-bottom: 30px;
+.team_text {
+    padding: 30px 20px 30px 20px;
 }
 .team_title {
     font-weight: 500;
@@ -290,14 +290,12 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-
-    margin-bottom: 30px;
 }
 /* Футер для сторінок Студія та Прортфоліо */
 /* footer - Підвал веб-сайту */
 .footer {
     background-color: var(--second-primary-background);
-    padding: 60px 0 60px 215px;
+    padding: 60px 0;
 }
 /* Лого */
 .footer_logo {
@@ -357,13 +355,13 @@ body {
     color: var(--primary-text-black);
     background-color: var(--background-section-color);
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: var(--accent-color);
     padding: 6px 22px;
     min-width: 75px;
 }
 .filter_button:hover, .filter_button:focus, .filter_button:active {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--primary-text-white);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -372,6 +370,9 @@ body {
 .gallery_list {
     display: flex;
     flex-wrap: wrap;
+
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 .gallery_item {
     width: 370px;
@@ -383,17 +384,18 @@ body {
     max-width: 100%;
     height: auto;
 }
-.gallery_list .gallery_item:nth-last-child(3n+1) {
+/* .gallery_list .gallery_item:nth-last-child(3n+1) {
     margin-right: 0;
-}
-.gallery_list .gallery_item:nth-last-child(-n+3) {
+} */
+/* .gallery_list .gallery_item:nth-last-child(-n+3) {
     margin-bottom: 0;
-}
+} */
 .gallery_text {
     display: block;
     border: 1px solid var(--border-color);
     border-top: 0;
-    padding-top: 20px;
+    padding: 20px 24px;
+
 }
 .gallery_title {
     font-weight: 700;
@@ -406,8 +408,4 @@ body {
     font-size: 16px;
     line-height: 1.87;
     color: var(--second-text-gray);
-    margin-bottom: 20px;
-}
-.gallery_title_description, .gallery_title {
-    margin-left: 24px;
 }
