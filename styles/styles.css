@@ -36,6 +36,7 @@ h1, h2, h3, h4, ul, p {
     --second-text-gray-alfa-chenel: rgba(255, 255, 255, 0.6);
     --border-color: #EEEEEE;
     --border-bottom-color-header: #ECECEC;
+    --background-button-hover: #188CE8;
 }
 /* container - ширина контенту відповідає макету 1200рх + треба врахувати гаттери 30рх (по 15 з кожного боку), в данному випадку треба відняти від зазначеного розміру */
 .container {
@@ -203,6 +204,12 @@ body {
     background-color: var(--accent-color);
     cursor: pointer;
 }
+.hero_button:hover, .hero_button:focus {
+    background: var(--background-button-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
 /* Блок - Наші особливості */
 .features_list {
     display: flex;
@@ -231,6 +238,9 @@ body {
 }
 /* Блок справ */
 /* Поєднані стилі для двух заголовків блоків case & team  */
+.case {
+    padding-top: 0;
+}
 .case_list {
     display: flex;
     flex-wrap: wrap;
@@ -403,6 +413,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-black);
+    margin-bottom: 4px;
 }
 .gallery_title_description {
     font-size: 16px;
